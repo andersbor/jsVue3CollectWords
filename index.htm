@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Collect words</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <h1>Collect words</h1>
+  <div id="app">
+    <div style="border: 1pt; border-style: solid; padding: 20pt">
+      <input v-model="word" type="text" placeholder="Type a word" />
+      <button v-on:click="save(word)">Save</button>
+      <button v-on:click="show">Show</button>
+      <button v-on:click="clear">Clear</button>
+      <span>{{message}}</span>
+      <span style="font-style: italic;">{{specialMessage}}</span>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
