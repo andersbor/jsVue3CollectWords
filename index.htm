@@ -16,9 +16,8 @@
       <input v-model="word" type="text" placeholder="Type a word" id="wordInput" />
       <button v-on:click="save(word)" id="saveButton" >Save</button>
       <button v-on:click="show" id="showButton">Show</button>
-      <button v-on:click="clear">Clear</button>
+      <button v-on:click="clear" id="clearButton">Clear</button>
       <span id="output">{{message}}</span>
-      <span style="font-style: italic;">{{specialMessage}}</span>
     </div>
   </div>
 
