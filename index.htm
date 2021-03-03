@@ -13,11 +13,11 @@
   <h1>Collect words</h1>
   <div id="app">
     <div style="border: 1pt; border-style: solid; padding: 20pt">
-      <input v-model="word" type="text" placeholder="Type a word" />
-      <button v-on:click="save(word)">Save</button>
-      <button v-on:click="show">Show</button>
+      <input v-model="word" type="text" placeholder="Type a word" id="wordInput" />
+      <button v-on:click="save(word)" id="saveButton" >Save</button>
+      <button v-on:click="show" id="showButton">Show</button>
       <button v-on:click="clear">Clear</button>
-      <span>{{message}}</span>
+      <span id="output">{{message}}</span>
       <span style="font-style: italic;">{{specialMessage}}</span>
     </div>
   </div>
